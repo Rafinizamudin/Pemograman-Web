@@ -1,0 +1,70 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+}
+
+.cont {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0 2px 4px red;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: blue;
+}
+
+p {
+    margin: 0;
+    color: chartreuse;
+} 
+
+.prof,
+.skil,
+.expe,
+.educ {
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin: 0 0 10px 0;
+    color: coral;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 10px;
+    background-color: aliceblue;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+article h3 {
+    margin: 0 0 5px 0;
+    color: darkblue;
+}
+
+article p { 
+    margin: 0;
+    color: darkgoldenrod;
+}
