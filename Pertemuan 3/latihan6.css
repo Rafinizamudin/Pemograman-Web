@@ -2,7 +2,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
-    background-color: aqua;
+    background-color: cyan;
 }
 
 .cont {
@@ -26,7 +26,7 @@ h1 {
 
 p {
     margin: 0;
-    color: chartreuse;
+    color: white;
 } 
 
 .prof,
@@ -38,7 +38,7 @@ p {
 
 h2 {
     margin: 0 0 10px 0;
-    color: coral;
+    color: blue;
 }
 
 ul {
@@ -50,7 +50,7 @@ ul {
 li {
     display: inline-block;
     margin-right: 10px;
-    background-color: aliceblue;
+    background-color: white;
     padding: 5px 10px;
     border-radius: 5px;
 }
@@ -61,10 +61,10 @@ article {
 
 article h3 {
     margin: 0 0 5px 0;
-    color: darkblue;
+    color: green;
 }
 
 article p { 
     margin: 0;
-    color: darkgoldenrod;
+    color: white;
 }
