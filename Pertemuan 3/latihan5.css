@@ -1,9 +1,12 @@
-h1 {
-    color: blue;
+h2{
+    color: yellow;
     font-size: 100px;
 }
 p{
     font-size: 100px;
     font: bold;
-    color: blue;
+    color: grey;
+}
+.zak{
+    color: pink;
 }
