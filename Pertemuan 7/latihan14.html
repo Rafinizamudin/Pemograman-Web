@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case</title>
+</head>
+<body>
+    <script>
+        const day = 3;
+        let name;
+
+        switch (day){
+            case 1:
+                name = 'Monday';
+                break;
+            case 2:
+                name = 'Tuesday';
+                break;
+            case 3:
+                name = 'Wednessday';
+                break;
+            case 4:
+                name = 'Thursday';
+                break;
+            case 5:
+                name = 'Friday';
+                break;
+            case 6:
+                name = 'Saturday';
+                break;
+            case 7:
+                name = 'Sunday';
+                break;
+            default:
+                name = 'Invalid day';
+        }
+
+        document.writeln(`Your day is: $(name)`);
+    </script>
+</body>
+</html>
