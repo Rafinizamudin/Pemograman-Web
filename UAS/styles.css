@@ -1,0 +1,157 @@
+:root {
+  --background: #1E3A8A; /* Biru gelap yang lebih tenang */
+  --font: #000000; /* Putih lembut */
+  --border: #374151; /* Abu-abu gelap */
+  --screen: #F9FAFB; /* Latar belakang putih yang lebih lembut */
+  --calculator: #1F2937; /* Abu-abu gelap untuk kalkulator */
+  --btn: #4CAF50; /* Hijau lembut untuk tombol utama */
+  --btn-hover: #66BB6A; /* Hijau cerah untuk hover */
+  --btn-active: #388E3C; /* Hijau gelap saat aktif */
+  --btn-red: #EF5350; /* Merah lembut */
+  --btn-red-hover: #F44336; /* Merah lebih cerah saat hover */
+  --btn-red-active: #C62828; /* Merah lebih gelap saat aktif */
+  --btn-blue: #42A5F5; /* Biru lembut */
+  --btn-blue-hover: #64B5F6; /* Biru lebih cerah saat hover */
+  --btn-blue-active: #1976D2; /* Biru lebih gelap saat aktif */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  position:relative;
+  min-height: 100%;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--font);
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  margin-bottom: 100px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button {
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* MAIN */
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+  min-height: 500px;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.calculator {
+  width: 400px;
+  border: 2px var(--border) solid;
+  border-radius: 20px;
+  padding: 25px;
+  background-color: var(--calculator);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.calculator:hover {
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.25);
+}
+
+.screen {
+  padding: 15px 25px;
+  border: 2px var(--border) solid;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: var(--screen);
+  text-align: right;
+  word-wrap: break-word;
+  word-break: break-all;
+  font-weight: 500;
+}
+
+.screen-last {
+  min-height: 32px;
+  font-size: 20px;
+}
+
+.screen-current {
+  min-height: 64px;
+  font-size: 45px;
+}
+
+.buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+.btn {
+  padding: 20px;
+  border: 2px var(--border) solid;
+  border-radius: 10px;
+  background-color: var(--btn);
+  font-size: 22px;
+  transition: transform 0.1s ease, background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: var(--btn-hover);
+  transform: scale(1.1);
+}
+
+.btn:active {
+  background-color: var(--btn-active);
+  transform: scale(1);
+}
+
+.btn-red {
+  background-color: var(--btn-red);
+}
+
+.btn-red:hover {
+  background-color: var(--btn-red-hover);
+}
+
+.btn-red:active {
+  background-color: var(--btn-red-active);
+}
+
+.btn-blue {
+  background-color: var(--btn-blue);
+}
+
+.btn-blue:hover {
+  background-color: var(--btn-blue-hover);
+}
+
+.btn-blue:active {
+  background-color: var(--btn-blue-active);
+}
+
+/* Disables input spinners in calc screen */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
